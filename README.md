@@ -22,7 +22,7 @@ Working independently, without a cluster, on two things:
 |---|---|---|
 | [**Research_paper**](https://github.com/heok0308hth-glitch/Research_paper) | 14 solo-authored papers (PDF + Markdown + reproduction certificates) across combinatorics, number theory, AI theory, and game theory | Python · Markdown |
 | [**HJTK**](https://github.com/heok0308hth-glitch/HJTK) | Zero-LLM Android AI orchestration: typed plans, approval gates, crash-safe journal, 64 built-in commands, 118 tests | Kotlin · Compose |
-| [**Korean_voice**](https://github.com/heok0308hth-glitch/Korean_voice) | On-device Korean neural TTS and voice cloning on ONNX Runtime — no cloud, no account | Android · ONNX |
+| [**Korean_voice**](https://github.com/heok0308hth-glitch/Korean_voice) | On-device Korean neural TTS and voice cloning (ONNX Runtime) — one-time model download, then fully offline | Android · ONNX |
 
 ## How I work
 
