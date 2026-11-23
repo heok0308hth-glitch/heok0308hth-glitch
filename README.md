@@ -12,9 +12,9 @@ Working independently, without a cluster, on two things:
   exact certificate, an independent re-simulation, or an explicit retraction —
   all fourteen papers carry a "Limits" section, and some carry a "Claims I
   withdrew" section.
-- **Deterministic Android tooling.** HJTK turns a typed request into an auditable
-  plan with an approval gate and a hash-chained journal, using zero on-device
-  models.
+- **Android tooling where the loop stays in the app.** HJTK ships no AI model of
+  its own: it signs into the web AIs you already use, hands work out by measured
+  track record, and will not let anything leave the phone without one tap.
 
 ## Repositories
 
@@ -42,7 +42,7 @@ Working independently, without a cluster, on two things:
   `r`-burning, and target-set selection as slices; exact DP over
   (burned mask, rounds) with triple cross-validation.
 - **A new lower bound R(5,24) ≥ 565** — a 564-vertex two-block cyclotomic witness,
-  with `ω ≤ 4` proved by orbit reduction *and* an symmetry-free SAT encoding.
+  with `ω ≤ 4` proved by orbit reduction *and* a symmetry-free SAT encoding.
 - **Costly questions, lying answers** — priced q-ary search under an adversarial
   lie budget, with the exact `c* log₂ n` sandwich at `e = 0` and its collapse at
   `e = 1`, measured by fault injection into the verifier itself.
