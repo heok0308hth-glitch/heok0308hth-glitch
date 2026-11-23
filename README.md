@@ -8,9 +8,10 @@ Working independently, without a cluster, on two things:
 
 - **Computational mathematics and AI theory.** Graph burning, Ramsey bounds,
   costly search with lies, generalized Collatz dynamics, and the failure modes of
-  self-verifying and multi-agent reasoning systems. Every claim comes with an
+  self-verifying and multi-agent reasoning systems — most recently how an agent
+  loses its own memory when it summarizes itself. Every claim comes with an
   exact certificate, an independent re-simulation, or an explicit retraction —
-  all fourteen papers carry a "Limits" section, and some carry a "Claims I
+  all fifteen papers carry a "Limits" section, and some carry a "Claims I
   withdrew" section.
 - **Android tooling where the loop stays in the app.** HJTK ships no AI model of
   its own: it signs into the web AIs you already use, hands work out by measured
@@ -20,7 +21,7 @@ Working independently, without a cluster, on two things:
 
 | Repository | What it is | |
 |---|---|---|
-| [**Research_paper**](https://github.com/heok0308hth-glitch/Research_paper) | 14 solo-authored papers (PDF + Markdown + reproduction certificates) across combinatorics, number theory, AI theory, and game theory | Python · Markdown |
+| [**Research_paper**](https://github.com/heok0308hth-glitch/Research_paper) | 15 solo-authored papers (PDF + Markdown + reproduction certificates) across combinatorics, number theory, AI theory, and game theory | Python · Markdown |
 | [**HJTK**](https://github.com/heok0308hth-glitch/HJTK) | Android assistant that installs no AI model: signs into Claude · ChatGPT · Gemini · Grok · DeepSeek and conducts them as a team — bidding, shared board, cross-checks, one-tap approval | Kotlin · Compose |
 | [**Korean_voice**](https://github.com/heok0308hth-glitch/Korean_voice) | On-device Korean neural TTS and voice cloning (ONNX Runtime) — one-time model download, then fully offline | Android · ONNX |
 
@@ -46,6 +47,14 @@ Working independently, without a cluster, on two things:
 - **Costly questions, lying answers** — priced q-ary search under an adversarial
   lie budget, with the exact `c* log₂ n` sandwich at `e = 0` and its collapse at
   `e = 1`, measured by fault injection into the verifier itself.
+- **Irreversible memory compression in a finite context window** — recursive
+  summarization as a finite-state Markov chain over facts, giving a closed-form
+  two-factor survival law (what the budget buys × what friction erases each pass)
+  and a spending-unit cliff: a 4-bit per-item cap throws away 58% of a set that
+  needs 4 bits per item, while the same 4 bits spent through an optimal code
+  throws away nothing. Re-summarizing more often, keeping more, or enlarging the
+  window cannot substitute for the other factor — each was rejected by
+  simulation, not argued.
 
 ## Contact
 
