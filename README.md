@@ -1,56 +1,77 @@
-# 허태혁 · Taehyeok Heo
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
+  <img src="assets/timeline-light.svg" width="100%" alt="허태혁, 학생. 2026년 11월 22일 23시 46분부터 24일 22시 13분까지 46시간 27분 동안 올린 논문 16편, 앱 2개, 커밋 74개를 영상 편집 타임라인처럼 펼친 그림. V3 트랙은 HJTK 릴리스 1.0부터 3.6까지, V2는 KoreanVoice, V1은 논문, A1은 커밋 하나하나이고 그중 무언가를 고친 커밋 27개가 주황색이다.">
+</picture>
 
-학생
+학생입니다.
 
-## Repositories
+위 그림은 이 계정에 올린 것을 커밋한 시각 그대로 편집 타임라인에 놓은 것입니다. 클립 하나가 릴리스나 논문 하나이고, 맨 아래 A1 트랙의 주황색 표시는 무언가를 **고친** 커밋입니다.
 
-| Repository | What it is | |
+<br>
+
+## 작업
+
+<a href="https://github.com/heok0308hth-glitch/Research_paper">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/papers-dark.svg">
+    <img src="assets/papers-light.svg" width="100%" alt="Research_paper: 논문 16편의 쪽수 막대와 논문별 고친 커밋 수. 모두 239쪽, 그림 109장.">
+  </picture>
+</a>
+
+**[Research_paper](https://github.com/heok0308hth-glitch/Research_paper)** · 단독 저자 논문 16편. 그래프 연소, 램지 하한 R(5,24) ≥ 565, 거짓말이 섞인 탐색, 일반화 콜라츠, 다중 에이전트 검증, 오더북 상전이까지. 논문마다 PDF와 원고가 있고, 램지 논문에는 직접 다시 돌려 볼 수 있는 인증서가 붙어 있습니다.
+
+<br>
+
+<a href="https://github.com/heok0308hth-glitch/HJTK">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hjtk-dark.svg">
+    <img src="assets/hjtk-light.svg" width="100%" alt="HJTK: 11월 23일 01시 59분 1.0부터 24일 18시 43분 3.6까지 13번의 릴리스를 계단으로 표시. 테스트 131개, 앱 안의 AI 모델 0개.">
+  </picture>
+</a>
+
+**[HJTK](https://github.com/heok0308hth-glitch/HJTK)** · AI 모델을 하나도 넣지 않은 안드로이드 앱. 폰에서 이미 로그인해 쓰는 Claude · ChatGPT · Gemini · Grok · DeepSeek에 일을 나눠 맡기고, 밖으로 나가는 동작은 한 번 눌러야만 실행됩니다.
+
+<br>
+
+<a href="https://github.com/heok0308hth-glitch/Korean_voice">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/voice-dark.svg">
+    <img src="assets/voice-light.svg" width="100%" alt="Korean_voice 측정값: 글자 오류율 1.1%, 학습 중 메모리 1.9GB에서 0.8GB, PyTorch 원본과 음성 토큰 186개 중 186개 일치, APK 16MB.">
+  </picture>
+</a>
+
+**[Korean_voice](https://github.com/heok0308hth-glitch/Korean_voice)** · 폰 안에서만 도는 한국어 음성 합성과 목소리 복제. 약 5억 파라미터 모델을 ONNX로 옮기고 4비트로 줄였고, 모델을 한 번 받은 뒤에는 인터넷 없이 동작합니다.
+
+<br>
+
+## 고친 기록
+
+틀린 건 지우지 않고 고친 커밋으로 남깁니다. 위 타임라인의 주황색 중 몇 개입니다.
+
+| 시각 | 어디 | 무엇이 틀렸고, 어떻게 고쳤나 |
 |---|---|---|
-| [**Research_paper**](https://github.com/heok0308hth-glitch/Research_paper) | 16 solo-authored papers (PDF + Markdown + reproduction certificates) across combinatorics, number theory, AI theory, game theory, and market microstructure | Python · Markdown |
-| [**HJTK**](https://github.com/heok0308hth-glitch/HJTK) | Android assistant that installs no AI model: signs into Claude · ChatGPT · Gemini · Grok · DeepSeek and conducts them as a team — bidding, shared board, cross-checks, one-tap approval | Kotlin · Compose |
-| [**Korean_voice**](https://github.com/heok0308hth-glitch/Korean_voice) | On-device Korean neural TTS and voice cloning (ONNX Runtime) — one-time model download, then fully offline | Android · ONNX |
+| 11.24 22:13 | 논문 5 · 13 · 15 · 16 | 그림·표 번호가 읽는 순서와 달랐다. 논문 13 표 6의 근사값 네 칸을 다시 계산했고, 논문 16 초록의 "4.9배"를 본문 표대로 4.8배로 바꿨다 |
+| 11.24 21:16 | Korean_voice | 소스와 모델이 있던 저장소가 지워져 새로 설치하면 모델을 받을 수 없었다. 남은 APK를 디컴파일해 모델 13개를 다시 만들고 v2.1.4로 복구 |
+| 11.24 08:44 | 논문 16 | 5절의 실행 횟수를 스크립트가 실제로 돌리는 7,962회에 맞춤 |
+| 11.24 00:36 | 논문 15 | 초록의 수치를 측정값(참 0.45–1.33%, 거짓 96.2–98.1%)으로 고침 |
+| 11.24 00:21 | 논문 12 | 곳곳에서 조금씩 달랐던 R0 정의를 하나로 통일 |
+| 11.24 00:08 | 논문 14 | 초록의 분모를 앙상블 표에 맞춤(3,995건 중 1,091건) |
+| 11.23 01:33 | HJTK | 앱이 죽어도 작업이 이어지게 하고, 작업 기록 파일이 깨지면 스스로 복구하게 하고, Android 15 포그라운드 서비스를 정리 |
+| 11.23 00:24 | 논문 4 | 영문 초록의 반례 수치를 본문 표(0.943 / 0.763)에 맞춤 |
 
-## How I work
+나머지는 각 저장소의 커밋 기록에 있습니다.
 
-1. **Compute the small case exactly.** If the definition can be enumerated for
-   `n ≤ 8`, enumerate it and publish the numbers.
-2. **Verify every optimum twice.** A separate checker that follows the definition
-   literally, plus a solver from a different family (SAT, MILP, brute force).
-3. **Write down what broke.** Wrong claims are retracted in the paper, not
-   quietly deleted. The retraction log is the most useful part of the document.
-4. **Keep the effect off until a human taps.** In software, anything that leaves
-   the device — mail, share, call, spend — waits behind an approval card.
+<br>
 
-## Selected papers
+## 연락
 
-- **Burning graphs with heterogeneous thresholds** — the ignition profile
-  `s_k(G, τ)` as a single function that contains classical burning, uniform
-  `r`-burning, and target-set selection as slices; exact DP over
-  (burned mask, rounds) with triple cross-validation.
-- **A new lower bound R(5,24) ≥ 565** — a 564-vertex two-block cyclotomic witness,
-  with `ω ≤ 4` proved by orbit reduction *and* a symmetry-free SAT encoding.
-- **Costly questions, lying answers** — priced q-ary search under an adversarial
-  lie budget, with the exact `c* log₂ n` sandwich at `e = 0` and its collapse at
-  `e = 1`, measured by fault injection into the verifier itself.
-- **Irreversible memory compression in a finite context window** — recursive
-  summarization as a finite-state Markov chain over facts, giving a closed-form
-  two-factor survival law (what the budget buys × what friction erases each pass)
-  and a spending-unit cliff: a 4-bit per-item cap throws away 58% of a set that
-  needs 4 bits per item, while the same 4 bits spent through an optimal code
-  throws away nothing. Re-summarizing more often, keeping more, or enlarging the
-  window cannot substitute for the other factor — each was rejected by
-  simulation, not argued.
-- **Reflexive order-book phase transitions under finite latency and discrete
-  ticks** — the critical reflexivity gain `γ_c = N / (2 S₀ μ₀ T a σ² H)` in closed
-  form, giving 0.368 against 0.349 measured (within 5%); the collapse is a jump,
-  not a slide, with the depth ratio falling from 1.04 to 0.00 while `γ` moves by
-  0.07–0.11, and its order is fixed by one measured elasticity (`ε_D = 0.784 < 1`).
-  A circuit breaker fitted to the natural drawdown is exactly neutral, but with an
-  anticipation channel at `L = 8` it makes the drawdown 19.9% worse — in all sixty
-  paired runs.
+어느 저장소든 이슈나 PR이 가장 빠릅니다. 논문에 대한 반례나 오류 제보를 가장 반깁니다.
 
-## Contact
+<br>
 
-Issues and pull requests in any of the repositories above are the fastest way to
-reach me. Corrections to the papers are genuinely welcome — especially a
-counterexample to a stated bound.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/end-dark.svg">
+  <img src="assets/end-light.svg" width="100%" alt="END — Don't make tool, make innovation.">
+</picture>
+
+<sub>그림은 모두 네 저장소의 git 기록에서 그렸습니다. 다시 그리는 스크립트는 <a href="tools/">tools/</a>에 있습니다.</sub>
