@@ -1,8 +1,7 @@
 # 허태혁 · Taehyeok Heo
 
-**Independent researcher and Android developer.** I write papers that end in a
-number I can defend, and Android apps that keep working when the network, the
-process, or the model does not.
+**Student.** I write papers that end in a number I can defend, and Android apps
+that keep working when the network, the process, or the model does not.
 
 Working independently, without a cluster, on two things:
 
@@ -11,7 +10,7 @@ Working independently, without a cluster, on two things:
   self-verifying and multi-agent reasoning systems — most recently how an agent
   loses its own memory when it summarizes itself. Every claim comes with an
   exact certificate, an independent re-simulation, or an explicit retraction —
-  all fifteen papers carry a "Limits" section, and some carry a "Claims I
+  all sixteen papers carry a "Limits" section, and some carry a "Claims I
   withdrew" section.
 - **Android tooling where the loop stays in the app.** HJTK ships no AI model of
   its own: it signs into the web AIs you already use, hands work out by measured
@@ -21,7 +20,7 @@ Working independently, without a cluster, on two things:
 
 | Repository | What it is | |
 |---|---|---|
-| [**Research_paper**](https://github.com/heok0308hth-glitch/Research_paper) | 15 solo-authored papers (PDF + Markdown + reproduction certificates) across combinatorics, number theory, AI theory, and game theory | Python · Markdown |
+| [**Research_paper**](https://github.com/heok0308hth-glitch/Research_paper) | 16 solo-authored papers (PDF + Markdown + reproduction certificates) across combinatorics, number theory, AI theory, game theory, and market microstructure | Python · Markdown |
 | [**HJTK**](https://github.com/heok0308hth-glitch/HJTK) | Android assistant that installs no AI model: signs into Claude · ChatGPT · Gemini · Grok · DeepSeek and conducts them as a team — bidding, shared board, cross-checks, one-tap approval | Kotlin · Compose |
 | [**Korean_voice**](https://github.com/heok0308hth-glitch/Korean_voice) | On-device Korean neural TTS and voice cloning (ONNX Runtime) — one-time model download, then fully offline | Android · ONNX |
 
@@ -55,6 +54,14 @@ Working independently, without a cluster, on two things:
   throws away nothing. Re-summarizing more often, keeping more, or enlarging the
   window cannot substitute for the other factor — each was rejected by
   simulation, not argued.
+- **Reflexive order-book phase transitions under finite latency and discrete
+  ticks** — the critical reflexivity gain `γ_c = N / (2 S₀ μ₀ T a σ² H)` in closed
+  form, giving 0.368 against 0.349 measured (within 5%); the collapse is a jump,
+  not a slide, with the depth ratio falling from 1.04 to 0.00 while `γ` moves by
+  0.07–0.11, and its order is fixed by one measured elasticity (`ε_D = 0.784 < 1`).
+  A circuit breaker fitted to the natural drawdown is exactly neutral, but with an
+  anticipation channel at `L = 8` it makes the drawdown 19.9% worse — in all sixty
+  paired runs.
 
 ## Contact
 
