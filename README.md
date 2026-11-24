@@ -1,20 +1,6 @@
 # 허태혁 · Taehyeok Heo
 
-**Student.** I write papers that end in a number I can defend, and Android apps
-that keep working when the network, the process, or the model does not.
-
-Working independently, without a cluster, on two things:
-
-- **Computational mathematics and AI theory.** Graph burning, Ramsey bounds,
-  costly search with lies, generalized Collatz dynamics, and the failure modes of
-  self-verifying and multi-agent reasoning systems — most recently how an agent
-  loses its own memory when it summarizes itself. Every claim comes with an
-  exact certificate, an independent re-simulation, or an explicit retraction —
-  all sixteen papers carry a "Limits" section, and some carry a "Claims I
-  withdrew" section.
-- **Android tooling where the loop stays in the app.** HJTK ships no AI model of
-  its own: it signs into the web AIs you already use, hands work out by measured
-  track record, and will not let anything leave the phone without one tap.
+학생
 
 ## Repositories
 
